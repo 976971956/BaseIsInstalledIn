@@ -18,8 +18,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self ljh_deviceColor];
     // Do any additional setup after loading the view.
 }
+- (void)ljh_deviceColor{
+    UIDevice *device = [UIDevice currentDevice];
+    SEL selector = NSSelectorFromString(@"deviceInfoForKey:");
+    if (![device respondsToSelector:selector]) {
+        selector = NSSelectorFromString(@"_deviceInfoForKey:");
+        if ([device respondsToSelector:selector]) {
+            IMP imp = [device methodForSelector:selector];
+            NSString *(*func)(id ,SEL, NSString*) = (void *)imp;
+            NSString *deviceColor = func(device,selector,@"DeviceColor");
+            NSString *deviceEnclosureColor = func(device, selector, @"DeviceEnclosureColor");
+            NSLog(@"deviceColor:%@,deviceEnclosureColor:%@", deviceColor,deviceEnclosureColor);
+        }
+    }
+}
+
 - (IBAction)zhuanhuanClick:(UIButton *)sender {
     NSString *num16 = [NSString getHexByBinary:self.textFile.text];
     NSString *str = [NSString convertHexStrToString:num16];

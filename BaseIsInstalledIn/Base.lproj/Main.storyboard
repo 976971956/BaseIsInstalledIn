@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.89411764705882346" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H5y-ET-3TI" secondAttribute="trailing" constant="10" id="5ln-4k-xBm"/>
                             <constraint firstItem="ctw-oS-8Po" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="67D-gz-Ybx"/>
@@ -125,7 +125,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.89411764705882346" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yGh-MP-CLt" firstAttribute="bottom" secondItem="7AH-pc-ltm" secondAttribute="bottom" constant="10" id="Fic-Rp-TtD"/>
                             <constraint firstItem="yGh-MP-CLt" firstAttribute="trailing" secondItem="7AH-pc-ltm" secondAttribute="trailing" constant="10" id="GPy-sS-PZx"/>
