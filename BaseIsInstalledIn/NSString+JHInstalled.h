@@ -7,8 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 @interface NSString (JHInstalled)
+
+/**
+ 获取手机外壳颜色
+
+ @return 手机外壳16进制字符串
+ */
++ (NSString *)ljh_deviceColor;
+
+/**
+ 16进制颜色转化
+
+ @param hexColor 16进制字符串 #000000
+ @return 转化后的颜色
+ */
++ (UIColor *)getColor:(NSString *)hexColor;
 /**
  二进制转换成十六进制
  

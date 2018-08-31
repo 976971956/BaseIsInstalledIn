@@ -21,7 +21,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [NSString getColor:[NSString ljh_deviceColor]];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
